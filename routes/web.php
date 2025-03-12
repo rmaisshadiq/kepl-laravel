@@ -113,7 +113,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard-laporan-kunjungan/', [LaporanController::class, 'showKunjungan']);
 
     Route::get('/dashboard-feedback', [FeedbackController::class, 'index']);
-    Route::resource('/dashboard-feedback', LaporanController::class);
+    Re::resource('/dashboard-feedback', FeedbackController::class);
 });
 
 
