@@ -104,8 +104,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard-laporan-buku-tamu/', [LaporanController::class, 'index']);
     Route::get('/dashboard-laporan-kunjungan/', [LaporanController::class, 'showKunjungan']);
 
-    Route::get('/dashboard-feedback', [FeedbackController::class, 'index']);
-    Re::resource('/dashboard-feedback', FeedbackController::class);
+    Re::get('/dashboard-feedback', [FeedbackController::class, 'index']);
+    Route::resource('/dashboard-feedback', FeedbackController::class);
 });
 
 // //museum-masuk-sekolah
