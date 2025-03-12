@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DivisiController;
-use App\Http\Controllers\FeedbackController;
+usge App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HistoriKunjunganController;
 use App\Http\Controllers\JadwalKunjunganController;
@@ -104,7 +104,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard-laporan-buku-tamu/', [LaporanController::class, 'index']);
     Route::get('/dashboard-laporan-kunjungan/', [LaporanController::class, 'showKunjungan']);
 
-    Re::get('/dashboard-feedback', [FeedbackController::class, 'index']);
+    Route::get('/dashboard-feedback', [FeedbackController::class, 'index']);
     Route::resource('/dashboard-feedback', FeedbackController::class);
 });
 
